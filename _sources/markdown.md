@@ -1,55 +1,50 @@
-# Markdown Files
+#CSV di Excel
 
-Whether you write your book's content in Jupyter Notebooks (`.ipynb`) or
-in regular markdown files (`.md`), you'll write in the same flavor of markdown
-called **MyST Markdown**.
-This is a simple file to help you get started and show off some syntax.
-
-## What is MyST?
-
-MyST stands for "Markedly Structured Text". It
-is a slight variation on a flavor of markdown called "CommonMark" markdown,
-with small syntax extensions to allow you to write **roles** and **directives**
-in the Sphinx ecosystem.
-
-For more about MyST, see [the MyST Markdown Overview](https://jupyterbook.org/content/myst.html).
-
-## Sample Roles and Directives
-
-Roles and directives are two of the most powerful tools in Jupyter Book. They
-are kind of like functions, but written in a markup language. They both
-serve a similar purpose, but **roles are written in one line**, whereas
-**directives span many lines**. They both accept different kinds of inputs,
-and what they do with those inputs depends on the specific role or directive
-that is being called.
-
-Here is a "note" directive:
-
-```{note}
-Here is a note
-```
-
-It will be rendered in a special box when you build your book.
-
-Here is an inline directive to refer to a document: {doc}`markdown-notebooks`.
+1.Kita sudah mempunyai data iris.csv
+2.Pertama klik data di excel 
+3.Kedua klik dapatkan data 
+4.Pilih dari file kemudian dari file teks/csv
+5.Kemudian cari peletakan file iris yang sudah kamu punya
+6.Kemudian load data
 
 
-## Citations
 
-You can also cite references that are stored in a `bibtex` file. For example,
-the following syntax: `` {cite}`holdgraf_evidence_2014` `` will render like
-this: {cite}`holdgraf_evidence_2014`.
+#csv ke power BI 
 
-Moreover, you can insert a bibliography into your page with this syntax:
-The `{bibliography}` directive must be used for all the `{cite}` roles to
-render properly.
-For example, if the references for your book are stored in `references.bib`,
-then the bibliography is inserted with:
+1.Pertama buka power BI terlebih dahulu 
+2.Klik get data dan klik more pilih file dan klik text/csv
+3.Kemudian cari penempatan file iris.csv
+4.Kemudian load data
+5.Kemudian centang semua kolom pada iris yang akan muncul menjadi diagram
 
-```{bibliography}
-```
 
-## Learn more
 
-This is just a simple starter to get you started.
-You can learn a lot more at [jupyterbook.org](https://jupyterbook.org).
+#Cara load data dari my sql ke power BI
+
+1.Pertama buka  xampp terlebih dahulu klik start apache dan mysql 
+2.Kemudian masuk di php myadmin 
+3.Buat database sesuai keinginan 
+4.Klik import kemudian pilih file dan klik go maka file iris yang sudah kita pilih ter import di database mysql
+5.kemudian buka di power BI dan klik get data 
+6.kemudian klik more dan cari database MySQLdatabase lalu connect
+7.isi server dan database sesuai dengan MySql dan klik ok
+8.pilih file yang sudah ada di MySql dan load data
+9.kemudian centang semua kolom dan akan tampil dalam bentuk diagram
+
+
+
+#Cara load data dari PostgreSql Local :
+
+1.sebelumnya kamu harus sudah punya Pg admin dan membuat database baru dalam pg admin , kemudian file csv yang sudah ter import sudah dalam databse yang dibuat.4
+2.kemudian masuk di power bi dan klik get data dan pilih postgresql database lalu klik connect
+3.kemudian isi server dan database sesuai dengan yang ada di pgadmin local dan klik ok
+4.pilih file dan load file kemudian centang semua kolom dan akan tampil dalam bentuk diagram
+
+#cara load data dari postgres cloud
+
+1.sebelumnya ada sudah membuat akun di elephant 
+2.kemudian masuk di power bi dan masuk get data dan klik more pilih postgesql database kemudian connect
+3.isi server dan database dari elephant yang sudah kalian buat
+4.kemudian pilih public iris dan load file 
+5.kemudian centang semua kolom dan akan tampil dalam bentuk diagram
+
